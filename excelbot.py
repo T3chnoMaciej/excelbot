@@ -122,9 +122,11 @@ if wybor==1:
             if rand1 == 1:
                 logging.info("scroll > 120 i rand choise 1 -> scrolling +5 units")
                 pyautogui.scroll(5)
+                time.sleep(0.2)
             if rand1 == 2:
                 logging.info("scroll > 120 i rand choise 2 -> scrolling -5 units")
                 pyautogui.scroll(-5)
+                time.sleep(0.2)
             totalscroll=0
         if x!=0 and x%7==0:
             rand2 = random.choice(range(1,2))
@@ -140,6 +142,7 @@ if wybor==1:
         #losowy czas trwania ruszania myszką
         nr = random.choice(range(1, 3))
         pyautogui.moveTo(x_cell,y_cell, duration=nr, tween=pyautogui.easeInOutQuad)
+        time.sleep(0.4)
         pyautogui.scroll(scrl)
         time.sleep(0.2)
         pyautogui.click()
@@ -187,24 +190,29 @@ if wybor==2:
             if rand1 == 1:
                 print("scrolling +20")
                 pyautogui.scroll(20)
+                time.sleep(0.2)
             if rand1 == 2:
                 print("scrolling -20")
                 pyautogui.scroll(-20)
+                time.sleep(0.2)
             totalscroll=0
         if x!=0 and x%7==0:
             rand2 = random.choice(range(1,2))
             if rand2 == 1:
                 print("scrolling +15")
                 pyautogui.scroll(-15)
+                time.sleep(0.2)
             if rand2 == 2:
                 print("scrolling -15")
                 pyautogui.scroll(15)
+                time.sleep(0.2)
             totalscroll=0
         #randomowa wysokosc scrollu
         scrl = random.choice(range(-20,50))
         #losowy czas trwania ruszania myszką
         nr = random.choice(range(1, 3))
         pyautogui.moveTo(551,561, duration=nr, tween=pyautogui.easeInOutQuad)
+        time.sleep(0.2)
         pyautogui.scroll(scrl)
         time.sleep(0.2)
         pyautogui.click()

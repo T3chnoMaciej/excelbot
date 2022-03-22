@@ -52,6 +52,7 @@ if file_exists == True:
         em_user = data["em_user"]
         em_password = data["em_password"]
         em_recepient = data["em_recepient"]
+        em_footer = data["em_footer"]
 
     logging.info("config loaded.")
 else:
@@ -92,8 +93,6 @@ def wyslij(nad, has, odb, serw, port, suchy, mokry, temat_wiad):
         smtpobj.quit()
         logging.info("Mail sent successfully. End of execution.")
         print("Mail sent successfully. End of execution.")
-        logging.info("****JEB4Ć*T0RUŃ****BDG_SQUAD****")
-        print("****JEB4Ć*T0RUŃ****BDG_SQUAD****")
     except smtplib.SMTPException:
         logging.error("error in mail sending process!")
         print("error in mail sending process!")
@@ -230,7 +229,7 @@ if wybor==2:
 
 elements = [f'<li>{e}</li>' for e in edited]
 if data["email"]==1:
-    tresc = "<h1>ExcelBot v.0.6.9</h1><h2>Edited theese cells:</h2><ul>"+"".join(elements)+"</ul><h3>****JEB4Ć*T0RUŃ****BDG_SQUAD****</h3>"
+    tresc = "<h1>ExcelBot v.0.6.9</h1><h2>Edited theese cells:</h2><ul>"+"".join(elements)+"</ul><h3>"+em_footer+"</h3>"
     logging.info("sending email.")
     print("sending email.")
     wyslij(em_user, em_password, em_recepient, em_host, 465, em_plain, tresc, temat)

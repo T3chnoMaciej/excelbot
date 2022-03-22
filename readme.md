@@ -2,15 +2,14 @@
 ## Struggling with boring excel job that you have? No more worries! I might have a solution for you!
 This little program makes your life just a bit better, when you have to be seen on excel/google calc and the pricks don't want to pay you.
 ## Usage:
-
-https://user-images.githubusercontent.com/20857124/159495711-4a35cbcf-b41c-4546-87a5-3f9b2dee0948.mp4
-
 ### The program has two modes:
 * 1 - dot - inserting a dot into a random cell in excell, without deleting it's original content, then waiting from 12 to 180 secodns to move to the next one. 
 * 2 - message - I get it, they screwed you over big time. Now you can replace random excell cells with your message of choice! (ex. pay me now dickheads)
 ## Disclaimer
 I am not responsible for any consequences that using this software may bring upon you. Have fun! ;)
 ### To get it working:
+tutorial:
+https://user-images.githubusercontent.com/20857124/159495711-4a35cbcf-b41c-4546-87a5-3f9b2dee0948.mp4
 * install python3 and requirements. 
 * run a terminal instance, then type import pyautogui . Position your mouse where the row you're "editing" is. Type in terminal pyuatogui.position(). Press enter.
 * put result values into conf.json in  cell: [x, y]. 

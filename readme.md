@@ -31,6 +31,7 @@ https://user-images.githubusercontent.com/20857124/159496004-1f3106ea-bee5-42bd-
 * em_password = i don't have to explain that one, do i?
 * em_recepient = same, rec_name@host.ocm
 * em_footer = a message as a h3 after a list of edited cells.
+
 You can leave the em_* values blank if you don't want the emails. The program does it's own logging to a file.
 
 ## logging isn't yet implemented in second mode (message)

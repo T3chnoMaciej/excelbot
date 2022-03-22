@@ -9,7 +9,11 @@ This little program makes your life just a bit better, when you have to be seen 
 I am not responsible for any consequences that using this software may bring upon you. Have fun! ;)
 ### To get it working:
 tutorial:
-https://user-images.githubusercontent.com/20857124/159495711-4a35cbcf-b41c-4546-87a5-3f9b2dee0948.mp4
+
+
+https://user-images.githubusercontent.com/20857124/159496004-1f3106ea-bee5-42bd-91ff-d4ac867ccab9.mp4
+
+
 * install python3 and requirements. 
 * run a terminal instance, then type import pyautogui . Position your mouse where the row you're "editing" is. Type in terminal pyuatogui.position(). Press enter.
 * put result values into conf.json in  cell: [x, y]. 

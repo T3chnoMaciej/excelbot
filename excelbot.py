@@ -14,9 +14,9 @@ import ssl
 
 #czas
 now = datetime.now()
-w1 = str(now).replace(" ","")
-w2 = str(now).replace(":","")
-teraz = str(w2).replace(".","")+".log"
+w1 = str(now).replace(" ","--")
+w2 = str(w1).replace(":","-")
+teraz = str(w2).replace(".","-")+".log"
 
 #logging
 logging.basicConfig(filename=teraz, level=logging.INFO)

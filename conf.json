@@ -1,0 +1,11 @@
+{
+    "cell": [597,570],
+    "name": [239, 570],
+    "field": [1895, 270],
+    "button": "command",
+    "email": 0,
+    "em_host": "smtp.host.com",       
+    "em_user": "name@host.com",
+    "em_password": "pazzw0rd1337",
+    "em_recepient": "rec_name@host.ocm"
+}

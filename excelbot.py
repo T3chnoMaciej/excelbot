@@ -14,8 +14,9 @@ import ssl
 
 #czas
 now = datetime.now()
-w1 = str(now).replace(" ","_")
-teraz = str(w1).replace(".","_")+".log"
+w1 = str(now).replace(" ","")
+w2 = str(now).replace(":","")
+teraz = str(w2).replace(".","")+".log"
 
 #logging
 logging.basicConfig(filename=teraz, level=logging.INFO)
@@ -158,6 +159,7 @@ if wybor==1:
         pyautogui.click()
         time.sleep(0.2)
         pyautogui.hotkey(guzik, 'c')
+        time.sleep(0.4)
         spot = pyperclip.paste()
         edited.append(spot)
         time.sleep(0.2)
@@ -219,8 +221,13 @@ if wybor==2:
         totalscroll = totalscroll+scrl
 
 elements = [f'<li>{e}</li>' for e in edited]
-
-tresc = "<h1>ExcelBot v.0.6.9</h1><h2>Edited theese cells:</h2><ul>"+"".join(elements)+"</ul><h3>****JEB4Ć*T0RUŃ****BDG_SQUAD****</h3>"
-logging.info("sending email.")
-print("sending email.")
-wyslij(em_user, em_password, em_recepient, em_host, 465, em_plain, tresc, temat)
+if data["email"]==1:
+    tresc = "<h1>ExcelBot v.0.6.9</h1><h2>Edited theese cells:</h2><ul>"+"".join(elements)+"</ul><h3>****JEB4Ć*T0RUŃ****BDG_SQUAD****</h3>"
+    logging.info("sending email.")
+    print("sending email.")
+    wyslij(em_user, em_password, em_recepient, em_host, 465, em_plain, tresc, temat)
+    logging.info("end of program execution.")
+    print("end of program execution.")
+if data["email"]==0:
+    logging.info("end of program execution.")
+    print("end of program execution.")

@@ -18,7 +18,7 @@ https://user-images.githubusercontent.com/20857124/159496004-1f3106ea-bee5-42bd-
 * run a terminal instance, then type import pyautogui . Position your mouse where the row you're "editing" is. Type in terminal pyuatogui.position(). Press enter.
 * put result values into conf.json in  cell: [x, y]. 
 * Do the same with name (name of the row/column you're editing, the program can email you that) and field (the very end of excel input field)
-* into conf.json insert "command" - if you have macos or "control" - if you run linux or windows(you normie)
+* into conf.json insert "command" - if you have macos or "control" - if you run linux or windows
 * run the program and enjoy your life! fuck corpo.
 ### All conf.json parameters
 * "cell" - [x, y] - where's the cell you're supposed to be editing.

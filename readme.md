@@ -1,10 +1,10 @@
 # EXCEL BOT
 ## Struggling with boring excel job that you have? No more worries! I might have a solution for you!
-This little program makes your life just a bit better, when you have to be seen on excel/google calc and the pricks don't want to pay you.
+This little program makes your life just a bit better, when you have to be seen on excel/google calc and the company don't want to pay you.
 ## Usage:
 ### The program has two modes:
 * 1 - dot - inserting a dot into a random cell in excell, without deleting it's original content, then waiting from 12 to 180 secodns to move to the next one. 
-* 2 - message - I get it, they screwed you over big time. Now you can replace random excell cells with your message of choice! (ex. pay me now dickheads)
+* 2 - message - I get it, they screwed you over big time. Now you can replace random excell cells with your message of choice! (ex. pay me now!)
 ## Disclaimer
 I am not responsible for any consequences that using this software may bring upon you. Have fun! ;)
 ### To get it working:
@@ -19,7 +19,7 @@ https://user-images.githubusercontent.com/20857124/159496004-1f3106ea-bee5-42bd-
 * put result values into conf.json in  cell: [x, y]. 
 * Do the same with name (name of the row/column you're editing, the program can email you that) and field (the very end of excel input field)
 * into conf.json insert "command" - if you have macos or "control" - if you run linux or windows
-* run the program and enjoy your life! fuck corpo.
+* run the program and enjoy your life!
 ### All conf.json parameters
 * "cell" - [x, y] - where's the cell you're supposed to be editing.
 * "name" - [x, y] - where's name of that cell.
